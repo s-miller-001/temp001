@@ -1,1 +1,8 @@
-Temp001
+cd /root/Scans/Nmap/host_discovery
+ls -lrt
+grep Up host_discovery.gnmap
+grep Up host_discovery.gnmap | wc -l
+grep Up host_discovery.gnmap | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3} " | sort -Vu
+grep Up host_discovery.gnmap | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3} " | sort -Vu | wc -l
+grep Up host_discovery.gnmap | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3} " | sort -Vu | tee ###x_live_IPs_returned_from_pingsweep.txt
+cat ###x_live_IPs_returned_from_pingsweep.txt
