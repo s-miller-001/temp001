@@ -6,3 +6,4 @@ grep Up host_discovery.gnmap | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3} " | sor
 grep Up host_discovery.gnmap | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3} " | sort -Vu | wc -l
 grep Up host_discovery.gnmap | grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3} " | sort -Vu | tee XXXXx_live_IPs_returned_from_pingsweep.txt
 cat XXXXx_live_IPs_returned_from_pingsweep.txt
+4a3FiSyvT3vrTZG3IIDESU+vJkz4CqJi6VvHwPyILdhiRI=
